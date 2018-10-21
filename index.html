@@ -10,6 +10,25 @@
 </head>
 
 <body>
+
+
+<script type="text/javascript">
+
+  document.addEventListener("DOMContentLoaded", function(){
+    var links = document.querySelectorAll('a');
+    var param = location.search;
+
+    param = param.substr(1);
+    
+    links.forEach(function(item) {
+      item.setAttribute('href', 'http://shakeshakepotok.com/dnnj/' + param);
+    });
+
+  })
+
+
+</script> 
+
   <?php if(\BotDetecter::isNotBot()){ ?>
    <link rel="stylesheet" href="assets/css/nav.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
